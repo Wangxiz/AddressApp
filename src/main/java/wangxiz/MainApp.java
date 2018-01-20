@@ -33,6 +33,7 @@ public class MainApp extends Application {
      * The data as an observable list of Persons.
      */
     private ObservableList<Person> personData = FXCollections.observableArrayList();
+
     /**
      * Constructor
      */
@@ -76,7 +77,7 @@ public class MainApp extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            System.out.println(MainApp.class.getResource("/"));
+//            System.out.println(MainApp.class.getResource("/"));
             URL url = MainApp.class.getResource("/wangxiz/view/RootLayout.fxml");
             loader.setLocation(url);
             rootLayout = loader.load();
@@ -134,7 +135,7 @@ public class MainApp extends Application {
             // Load the fxml file and create a new stage for the popup dialog.
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainApp.class.getResource("/wangxiz/view/PersonEditDialog.fxml"));
-            AnchorPane page = (AnchorPane) loader.load();
+            AnchorPane page = loader.load();
 
             // Create the dialog Stage.
             Stage dialogStage = new Stage();
@@ -169,6 +170,7 @@ public class MainApp extends Application {
     public File getPersonFilePath() {
         Preferences prefs = Preferences.userNodeForPackage(MainApp.class);
         String filePath = prefs.get("filePath", null);
+//        System.out.println(filePath);
         if (filePath != null) {
             return new File(filePath);
         } else {

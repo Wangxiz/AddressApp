@@ -43,6 +43,8 @@ public class RootLayoutController {
     @FXML
     private void handleOpen() {
         FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File("src/main/resources/books"));
+//System.out.println(new File("").toURI());
 
         // Set extension filter
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(
@@ -77,6 +79,7 @@ public class RootLayoutController {
     @FXML
     private void handleSaveAs() {
         FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File("src/main/resources/books"));
 
         // Set extension filter
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(
