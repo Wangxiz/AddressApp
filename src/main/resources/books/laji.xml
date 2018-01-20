@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <birthday>1999-02-21</birthday>
+        <city>some city</city>
+        <firstName>SSS</firstName>
+        <lastName>asadsd</lastName>
+        <postalCode>1234</postalCode>
+        <street>asdasdas</street>
+    </person>
+    <person>
+        <birthday>1999-02-21</birthday>
+        <city>Anhui</city>
+        <firstName>asdnau</firstName>
+        <lastName>sdnfjiosdnS</lastName>
+        <postalCode>1234</postalCode>
+        <street>dsASDA</street>
+    </person>
+</persons>
