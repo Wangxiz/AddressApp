@@ -80,7 +80,7 @@ public class RootLayoutController {
     private void handleSaveAs() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File("src/main/resources/books"));
-
+    
         // Set extension filter
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(
                 "XML files (*.xml)", "*.xml");
