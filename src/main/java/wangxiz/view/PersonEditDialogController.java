@@ -1,6 +1,7 @@
 package wangxiz.view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import wangxiz.model.Person;
@@ -147,12 +148,11 @@ public class PersonEditDialogController {
             return true;
         } else {
             // Show the error message.
-            JOptionPane.showConfirmDialog(
-                    null,
-                    "Please correct invalid fields",
-                    "Invalid Fields",
-                    JOptionPane.YES_NO_OPTION,
-                    JOptionPane.ERROR_MESSAGE);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Invalid Fields");
+            alert.setHeaderText(null);
+            alert.setContentText("Please correct invalid fields.");
+            alert.showAndWait();
             return false;
         }
     }

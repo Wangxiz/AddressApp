@@ -1,6 +1,7 @@
 package wangxiz.view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -108,12 +109,11 @@ public class PersonOverviewController {
             personTable.getItems().remove(selectedIndex);
         } else {
             // Nothing selected.
-            JOptionPane.showConfirmDialog(
-                    null,
-                    "No Person Selected, please select a person in the table.",
-                    "No Selection",
-                    JOptionPane.YES_NO_OPTION,
-                    JOptionPane.WARNING_MESSAGE);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("No Selection");
+            alert.setHeaderText(null);
+            alert.setContentText("No Person Selected, please select a person in the table.");
+            alert.showAndWait();
         }
     }
 
@@ -145,12 +145,11 @@ public class PersonOverviewController {
 
         } else {
             // Nothing selected.
-            JOptionPane.showConfirmDialog(
-                    null,
-                    "No Person Selected, Please select a person in the table.",
-                    "No Selection",
-                    JOptionPane.YES_NO_OPTION,
-                    JOptionPane.WARNING_MESSAGE);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("No Selection");
+            alert.setHeaderText(null);
+            alert.setContentText("No Person Selected, please select a person in the table.");
+            alert.showAndWait();
         }
     }
 }

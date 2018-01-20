@@ -5,6 +5,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -221,12 +222,11 @@ public class MainApp extends Application {
             setPersonFilePath(file);
 
         } catch (Exception e) { // catches ANY exception
-            JOptionPane.showConfirmDialog(
-                    null,
-                    "Could not save data to file:\n" + file.getPath(),
-                    "Error",
-                    JOptionPane.YES_NO_OPTION,
-                    JOptionPane.ERROR_MESSAGE);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("Could not load data from file:\n" + file.getPath());
+            alert.showAndWait();
         }
     }
 
@@ -252,12 +252,11 @@ public class MainApp extends Application {
             // Save the file path to the registry.
             setPersonFilePath(file);
         } catch (Exception e) { // catches ANY exception
-            JOptionPane.showConfirmDialog(
-                    null,
-                    "Could not save data to file:\n" + file.getPath(),
-                    "Error",
-                    JOptionPane.YES_NO_OPTION,
-                    JOptionPane.ERROR_MESSAGE);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("Could not save data to file:\n" + file.getPath());
+            alert.showAndWait();
         }
     }
 

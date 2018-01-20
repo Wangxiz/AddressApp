@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ca5eca-d551-4c17-9f6a-16c06bd820ee" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/wangxiz.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/books/wanglijiang.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wangxiz/MainApp.java" afterPath="$PROJECT_DIR$/src/main/java/wangxiz/MainApp.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayout.fxml" afterPath="$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayout.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatistics.fxml" afterPath="$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatistics.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatisticsController.java" afterPath="$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatisticsController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wangxiz/view/PersonEditDialogController.java" afterPath="$PROJECT_DIR$/src/main/java/wangxiz/view/PersonEditDialogController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wangxiz/view/PersonOverviewController.java" afterPath="$PROJECT_DIR$/src/main/java/wangxiz/view/PersonOverviewController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayoutController.java" afterPath="$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayoutController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,65 +25,38 @@
       <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+            <state relative-caret-position="154">
+              <caret line="223" column="56" lean-forward="false" selection-start-line="223" selection-start-column="56" selection-end-line="223" selection-end-column="56" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#start#0;class#MainApp#0" expanded="false" />
                 <element signature="method#showPersonOverview#0;class#MainApp#0" expanded="false" />
                 <element signature="method#showPersonEditDialog#0;class#MainApp#0" expanded="false" />
+                <element signature="method#getPersonFilePath#0;class#MainApp#0" expanded="false" />
+                <element signature="method#setPersonFilePath#0;class#MainApp#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RootLayoutController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RootLayoutController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayoutController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+            <state relative-caret-position="354">
+              <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/java/jdk1.8.0_121/src.zip!/java/lang/System.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileChooser.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/java/jdk1.8.0_121/javafx-src.zip!/javafx/stage/FileChooser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="229" column="41" lean-forward="false" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BirthdayStatisticsController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BirthdayStatisticsController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatisticsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-69">
-              <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+            <state relative-caret-position="674">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BarChart.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/chart/BarChart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -108,17 +83,23 @@
       <projects_view />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/PersonOverviewController.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/wangxiz/model/PersonListWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayout.fxml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/wangxiz/view/DarkTheme.css" />
         <option value="$PROJECT_DIR$/src/main/java/wangxiz/view/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatisticsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/wangxiz/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayoutController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wangxiz/view/PersonEditDialogController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wangxiz/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wangxiz/view/PersonOverviewController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatisticsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatistics.fxml" />
       </list>
     </option>
   </component>
@@ -383,7 +364,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516433397448</updated>
-      <workItem from="1516433398911" duration="9554000" />
+      <workItem from="1516433398911" duration="12652000" />
     </task>
     <task id="LOCAL-00001" summary="init an Address application">
       <created>1516450708677</created>
@@ -396,7 +377,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9554000" />
+    <option name="totallyTimeSpent" value="12652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,7 +398,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3380744" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3632385" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3632385" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -470,14 +451,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/util/LocalDateAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/PersonOverviewController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -702,22 +675,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/chart/BarChart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayout.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -761,18 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/PersonEditDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="154" column="47" lean-forward="true" selection-start-line="154" selection-start-column="47" selection-end-line="154" selection-end-column="47" />
-          <folding>
-            <element signature="e#1015#1016#0" expanded="false" />
-            <element signature="e#1061#1062#0" expanded="false" />
-            <element signature="method#setPerson#0;class#PersonEditDialogController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/java/jdk1.8.0_121/javafx-src.zip!/javafx/stage/FileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -781,12 +726,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatisticsController.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/PersonEditDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="153" column="64" lean-forward="false" selection-start-line="153" selection-start-column="64" selection-end-line="153" selection-end-column="64" />
+          <folding>
+            <element signature="method#setPerson#0;class#PersonEditDialogController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_121/src.zip!/javax/swing/JOptionPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="753" column="28" lean-forward="false" selection-start-line="753" selection-start-column="28" selection-end-line="753" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/PersonOverviewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1982">
+          <caret line="154" column="1" lean-forward="true" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+          <folding>
+            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="223" column="56" lean-forward="false" selection-start-line="223" selection-start-column="56" selection-end-line="223" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#start#0;class#MainApp#0" expanded="false" />
+            <element signature="method#showPersonOverview#0;class#MainApp#0" expanded="false" />
+            <element signature="method#showPersonEditDialog#0;class#MainApp#0" expanded="false" />
+            <element signature="method#getPersonFilePath#0;class#MainApp#0" expanded="false" />
+            <element signature="method#setPersonFilePath#0;class#MainApp#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -799,23 +793,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/MainApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayoutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
-          <folding>
-            <element signature="method#start#0;class#MainApp#0" expanded="false" />
-            <element signature="method#showPersonOverview#0;class#MainApp#0" expanded="false" />
-            <element signature="method#showPersonEditDialog#0;class#MainApp#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="354">
+          <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/RootLayoutController.java">
+    <entry file="jar:///usr/java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/chart/BarChart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+        <state relative-caret-position="-29">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatistics.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wangxiz/view/BirthdayStatisticsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

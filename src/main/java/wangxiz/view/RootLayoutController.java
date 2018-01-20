@@ -1,6 +1,7 @@
 package wangxiz.view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.stage.FileChooser;
 import wangxiz.MainApp;
 
@@ -80,7 +81,7 @@ public class RootLayoutController {
     private void handleSaveAs() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File("src/main/resources/books"));
-    
+
         // Set extension filter
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(
                 "XML files (*.xml)", "*.xml");
@@ -103,12 +104,11 @@ public class RootLayoutController {
      */
     @FXML
     private void handleAbout() {
-        JOptionPane.showConfirmDialog(
-                null,
-                "Author: Marco Jakob\nWebsite: http://code.makery.ch",
-                "AddressApp",
-                JOptionPane.YES_NO_OPTION,
-                JOptionPane.ERROR_MESSAGE);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("About");
+        alert.setHeaderText(null);
+        alert.setContentText("Author: Wangxiz\nWebsite: https://github.com/Wangxiz");
+        alert.showAndWait();
     }
 
     /**
