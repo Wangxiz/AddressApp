@@ -39,8 +39,7 @@ public class PersonEditDialogController {
      * after the fxml file has been loaded.
      */
     @FXML
-    private void initialize() {
-    }
+    private void initialize() {}
 
     /**
      * Sets the stage of this dialog.

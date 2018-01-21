@@ -11,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
 import wangxiz.model.Person;
 import wangxiz.model.PersonListWrapper;
 import wangxiz.view.BirthdayStatisticsController;
@@ -18,7 +19,6 @@ import wangxiz.view.PersonEditDialogController;
 import wangxiz.view.PersonOverviewController;
 import wangxiz.view.RootLayoutController;
 
-import javax.swing.*;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
@@ -237,8 +237,7 @@ public class MainApp extends Application {
      */
     public void savePersonDataToFile(File file) {
         try {
-            JAXBContext context = JAXBContext
-                    .newInstance(PersonListWrapper.class);
+            JAXBContext context = JAXBContext.newInstance(PersonListWrapper.class);
             Marshaller m = context.createMarshaller();
             m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
