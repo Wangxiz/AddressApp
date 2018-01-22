@@ -36,38 +36,26 @@ public class MainApp extends Application {
     private ObservableList<Person> personData = FXCollections.observableArrayList();
 
     /**
-     * Constructor
-     */
-    public MainApp() {
-        // Add some sample data
-        personData.add(new Person("Hans", "Muster"));
-        personData.add(new Person("Ruth", "Mueller"));
-        personData.add(new Person("Heinz", "Kurz"));
-        personData.add(new Person("Cornelia", "Meier"));
-        personData.add(new Person("Werner", "Meyer"));
-        personData.add(new Person("Lydia", "Kunz"));
-        personData.add(new Person("Anna", "Best"));
-        personData.add(new Person("Stefan", "Meier"));
-        personData.add(new Person("Martin", "Mueller"));
-    }
-
-    /**
-     * Returns the data as an observable list of Persons.
-     * @return
+     * @return Returns the data as an observable list of Persons.
      */
     public ObservableList<Person> getPersonData() {
         return personData;
+    }
+
+    /**
+     * @return Returns the main stage.
+     */
+    public Stage getPrimaryStage() {
+        return primaryStage;
     }
 
     @Override
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("AddressApp");
-
         this.primaryStage.getIcons().add(new Image("images/address_books.png"));
 
         initRootLayout();
-
         showPersonOverview();
     }
 
@@ -78,7 +66,6 @@ public class MainApp extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-//            System.out.println(MainApp.class.getResource("/"));
             URL url = MainApp.class.getResource("/wangxiz/view/RootLayout.fxml");
             loader.setLocation(url);
             rootLayout = loader.load();
@@ -95,6 +82,7 @@ public class MainApp extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         // Try to load last opened person file.
         File file = getPersonFilePath();
         if (file != null) {
@@ -105,7 +93,7 @@ public class MainApp extends Application {
     /**
      * Shows the person overview inside the root layout.
      */
-    public void showPersonOverview() {
+    private void showPersonOverview() {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
@@ -162,17 +150,36 @@ public class MainApp extends Application {
         }
     }
 
+    public void showBirthdayStatistics() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainApp.class.getResource("/wangxiz/view/BirthdayStatistics.fxml"));
+            AnchorPane page = loader.load();
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Birthday Statistics");
+            dialogStage.getIcons().add(new Image("images/statistics-2b.png"));
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            BirthdayStatisticsController controller = loader.getController();
+            controller.setPersonData(personData);
+
+            dialogStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
-     * Returns the person file preference, i.e. the file that was last opened.
+     * @return Returns the person file preference, i.e. the file that was last opened.
      * The preference is read from the OS specific registry. If no such
      * preference can be found, null is returned.
-     *
-     * @return
      */
     public File getPersonFilePath() {
         Preferences prefs = Preferences.userNodeForPackage(MainApp.class);
         String filePath = prefs.get("filePath", null);
-//        System.out.println(filePath);
         if (filePath != null) {
             return new File(filePath);
         } else {
@@ -205,7 +212,7 @@ public class MainApp extends Application {
      * Loads person data from the specified file. The current person data will
      * be replaced.
      *
-     * @param file
+     * @param file, date file name
      */
     public void loadPersonDataFromFile(File file) {
         try {
@@ -234,7 +241,7 @@ public class MainApp extends Application {
     /**
      * Saves the current person data to the specified file.
      *
-     * @param file
+     * @param file, date file name
      */
     public void savePersonDataToFile(File file) {
         try {
@@ -258,39 +265,6 @@ public class MainApp extends Application {
             alert.setContentText("Could not save data to file:\n" + file.getPath());
             alert.showAndWait();
         }
-    }
-
-    public void showBirthdayStatistics() {
-        try {
-            // Load the fxml file and create a new stage for the popup.
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("/wangxiz/view/BirthdayStatistics.fxml"));
-            AnchorPane page = loader.load();
-            Stage dialogStage = new Stage();
-            dialogStage.setTitle("Birthday Statistics");
-            dialogStage.getIcons().add(new Image("images/statistics-2b.png"));
-            dialogStage.initModality(Modality.WINDOW_MODAL);
-            dialogStage.initOwner(primaryStage);
-            Scene scene = new Scene(page);
-            dialogStage.setScene(scene);
-
-            // Set the persons into the controller.
-            BirthdayStatisticsController controller = loader.getController();
-            controller.setPersonData(personData);
-
-            dialogStage.show();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
-     * Returns the main stage.
-     * @return
-     */
-    public Stage getPrimaryStage() {
-        return primaryStage;
     }
 
     public static void main(String[] args) {
