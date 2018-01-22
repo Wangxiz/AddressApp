@@ -1,5 +1,5 @@
 .background {
-    -fx-background-color: #50746f;
+    -fx-background-color: #2e4662;
 }
 
 .label {
@@ -24,9 +24,9 @@
 }
 
 .table-view {
-    -fx-base: #50746f;
-    -fx-control-inner-background: #50746f;
-    -fx-background-color: #50746f;
+    -fx-base: #2e4662;
+    -fx-control-inner-background: #2e4662;
+    -fx-background-color: #2e4662;
     -fx-table-cell-border-color: transparent;
     -fx-table-header-border-color: transparent;
     -fx-padding: 5;
@@ -70,11 +70,11 @@
 }
 
 .menu-bar {
-    -fx-background-color: derive(#1d1d1d,20%);
+    -fx-background-color: #2e4662;
 }
 
 .context-menu {
-    -fx-background-color: derive(#1d1d1d,50%);
+    -fx-background-color: derive(#2e4662,50%);
 }
 
 .menu-bar .label {
@@ -89,7 +89,7 @@
 }
 
 .text-field {
-    -fx-font-size: 12pt;
+    -fx-font-size: 12px;
     -fx-font-family: "Segoe UI Semibold";
 }
 
@@ -103,7 +103,7 @@
     -fx-border-color: #e2e2e2;
     -fx-border-width: 2;
     -fx-background-radius: 0;
-    -fx-background-color: #456631;
+    -fx-background-color: #647f9d;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     -fx-font-size: 11pt;
     -fx-text-fill: #d8d8d8;

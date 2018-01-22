@@ -1,15 +1,13 @@
 package wangxiz.view;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import wangxiz.MainApp;
 import wangxiz.model.Person;
 import wangxiz.util.DateUtil;
 
 import javax.swing.*;
+import java.util.Optional;
 
 
 public class PersonOverviewController {
@@ -85,7 +83,7 @@ public class PersonOverviewController {
             firstNameLabel.setText(person.getFirstName());
             lastNameLabel.setText(person.getLastName());
             streetLabel.setText(person.getStreet());
-            postalCodeLabel.setText(Integer.toString(person.getPostalCode()));
+            postalCodeLabel.setText(person.getPostalCode());
             cityLabel.setText(person.getCity());
             birthdayLabel.setText(DateUtil.format(person.getBirthday()));
         } else {
@@ -104,10 +102,22 @@ public class PersonOverviewController {
      */
     @FXML
     private void handleDeletePerson() {
-        int selectedIndex = personTable.getSelectionModel().getSelectedIndex();
+        TableView.TableViewSelectionModel<Person> model = personTable.getSelectionModel();
+        int selectedIndex = model.getSelectedIndex();
         if (selectedIndex >= 0) {
-            personTable.getItems().remove(selectedIndex);
-        } else {
+            String firstName = model.getSelectedItem().getFirstName();
+            String lastName = model.getSelectedItem().getLastName();
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Confirm");
+            alert.setHeaderText(null);
+            alert.setContentText("Are you sure to delete '" + firstName + " " + lastName + "'\nfrom your address book?");
+            Optional<ButtonType> result = alert.showAndWait();
+
+            if(result.isPresent() && result.get() == ButtonType.OK) {
+                personTable.getItems().remove(selectedIndex);
+            }
+        }
+        else {
             // Nothing selected.
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("No Selection");

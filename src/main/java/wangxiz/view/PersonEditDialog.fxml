@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="380.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wangxiz.view.PersonEditDialogController">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="380.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wangxiz.view.PersonEditDialogController">
    <children>
-      <GridPane layoutX="76.0" layoutY="50.0" prefHeight="180.0" prefWidth="590.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <GridPane hgap="2.0" layoutX="76.0" layoutY="50.0" prefHeight="180.0" prefWidth="590.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="106.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="254.0" />
@@ -24,12 +26,12 @@
             <Label text="City" GridPane.rowIndex="3" />
             <Label text="Postal Code" GridPane.rowIndex="4" />
             <Label text="Birthday" GridPane.rowIndex="5" />
-            <TextField fx:id="firstNameField" prefHeight="26.0" prefWidth="273.0" GridPane.columnIndex="1" />
-            <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="streetField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="cityField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField fx:id="postalCodeField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField fx:id="birthdayField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="firstNameField" minHeight="25.0" prefHeight="25.0" prefWidth="273.0" GridPane.columnIndex="1" />
+            <TextField fx:id="lastNameField" minHeight="15.0" prefHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="streetField" minHeight="25.0" prefHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="cityField" minHeight="25.0" prefHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="postalCodeField" minHeight="25.0" prefHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="birthdayField" minHeight="25.0" prefHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
       <HBox layoutX="372.0" layoutY="340.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">

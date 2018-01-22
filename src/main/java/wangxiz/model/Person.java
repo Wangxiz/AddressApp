@@ -10,7 +10,7 @@ public class Person {
     private final StringProperty firstName;
     private final StringProperty lastName;
     private final StringProperty street;
-    private final IntegerProperty postalCode;
+    private final StringProperty postalCode;
     private final StringProperty city;
     private final ObjectProperty<LocalDate> birthday;
 
@@ -32,10 +32,10 @@ public class Person {
         this.lastName = new SimpleStringProperty(lastName);
 
         // Some initial dummy data, just for convenient testing.
-        this.street = new SimpleStringProperty("some street");
-        this.postalCode = new SimpleIntegerProperty(1234);
-        this.city = new SimpleStringProperty("some city");
-        this.birthday = new SimpleObjectProperty<LocalDate>(LocalDate.of(1999, 2, 21));
+        this.street = new SimpleStringProperty();
+        this.postalCode = new SimpleStringProperty();
+        this.city = new SimpleStringProperty();
+        this.birthday = new SimpleObjectProperty<>();
     }
 
     public String getFirstName() {
@@ -74,15 +74,15 @@ public class Person {
         return street;
     }
 
-    public int getPostalCode() {
+    public String getPostalCode() {
         return postalCode.get();
     }
 
-    public void setPostalCode(int postalCode) {
+    public void setPostalCode(String postalCode) {
         this.postalCode.set(postalCode);
     }
 
-    public IntegerProperty postalCodeProperty() {
+    public StringProperty postalCodeProperty() {
         return postalCode;
     }
 

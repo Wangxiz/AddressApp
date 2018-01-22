@@ -8,7 +8,7 @@ import java.util.List;
  * Helper class to wrap a list of persons. This is used for saving the
  * list of persons to XML.
  *
- * @author Marco Jakob
+ * @author Wangxiz
  */
 @XmlRootElement(name = "persons")
 public class PersonListWrapper {
